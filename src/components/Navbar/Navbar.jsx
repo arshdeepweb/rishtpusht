@@ -12,10 +12,13 @@ const Navbar = () => {
         <div className='md:hidden flex items-center'>
         <FaBars />
         </div>
-            <img src={images.logo} alt="" className='w-[120px]'/>
+            <img src={images.logo} alt="" className='md:w-[120px] w-[70px]'/>
+            <div className='block md:hidden'>
+            <PiTrolleySuitcase className='text-[1.5rem]' />
+            </div>
         </div>
         <div className='flex gap-6 items-center '>
-            <form className='flex gap-3 md:w-[34rem] lg:w-[44rem] w-full h-[49px] border-2 items-center border-solid rounded-full px-6 border-gray-200'>
+            <form className='flex gap-3 md:w-[34rem] my-4 md:my-0 lg:w-[44rem] w-full h-[49px] border-2 items-center border-solid rounded-full px-6 border-gray-200'>
             <IoSearch className='text-[1.5rem]'/>
             <input type="text" placeholder='Search' className='flex w-full md:w-[400px] border-2 border-transparent outline-none border-gray-500'/>
             </form>
