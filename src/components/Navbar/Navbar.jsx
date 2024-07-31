@@ -8,13 +8,13 @@ import { FaBars } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div className='flex justify-evenly items-center flex-col md:flex-row my-[2rem]'>
-        <div className='flex items-start justify-evenly w-full'>
-        <div className='md:hidden flex items-center'>
+        <div className='flex items-start justify-between w-full'>
+        <div className='md:hidden flex pl-4 items-center'>
         <FaBars />
         </div>
             <img src={images.logo} alt="" className='md:w-[120px] w-[70px]'/>
-            <div className='block md:hidden'>
-            <PiTrolleySuitcase className='text-[1.5rem]' />
+            <div className='block md:hidden pr-4'>
+            <PiTrolleySuitcase className='text-[1.5rem] ' />
             </div>
         </div>
         <div className='flex gap-6 items-center '>
